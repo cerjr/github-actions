@@ -5,7 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "start": "node src/index.js",
-    "test": "jest"
+    "test": "jest --coverage"
   },
   "repository": {
     "type": "git",
@@ -19,5 +19,9 @@
   "homepage": "https://github.com/cerjr/github-actions#readme",
   "devDependencies": {
     "jest": "^27.3.1"
+  },
+  "dependencies": {
+    "@types/jest": "^27.0.2",
+    "sonar-scanner": "^3.1.0"
   }
 }
