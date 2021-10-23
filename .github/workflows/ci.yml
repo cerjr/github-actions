@@ -28,6 +28,7 @@ jobs:
           echo "sonar.test.inclusions=**/*.test.js"                   >> sonar-project.properties
           echo "sonar.javascript.coveragePlugin=lcov"                 >> sonar-project.properties
           echo "sonar.javascript.lcov.reportPaths=coverage/lcov.info" >> sonar-project.properties
+          echo "$(ls -la)"
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@master
         env:
