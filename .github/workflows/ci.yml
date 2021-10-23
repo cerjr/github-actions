@@ -17,7 +17,7 @@ jobs:
           node-version: '14'
       - run: npm install
       - run: npm test
-      - name: Create file
+      - name: Create file sonar-project.properties
         run: |
           echo "sonar.projectKey=${{ secrets.SONAR_PROJECT_KEY }}"    > sonar-project.properties
           echo "sonar.organization=cerjr"                             >> sonar-project.properties
@@ -28,7 +28,6 @@ jobs:
           echo "sonar.test.inclusions=**/*.test.js"                   >> sonar-project.properties
           echo "sonar.javascript.coveragePlugin=lcov"                 >> sonar-project.properties
           echo "sonar.javascript.lcov.reportPaths=coverage/lcov.info" >> sonar-project.properties
-          echo "$(cat sonar-project.properties)"
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@master
         env:
