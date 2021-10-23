@@ -1,0 +1,23 @@
+{
+  "name": "github-actions",
+  "version": "0.1.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cerjr/github-actions.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cerjr/github-actions/issues"
+  },
+  "homepage": "https://github.com/cerjr/github-actions#readme",
+  "devDependencies": {
+    "jest": "^27.3.1"
+  }
+}
