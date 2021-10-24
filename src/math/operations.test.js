@@ -24,3 +24,7 @@ test('Must power two values correctly', () => {
 test('Must get sqrt correctly', () => {
     expect(operations.sqrt(4)).toEqual(2)
 });
+
+test('must get the value multiplied by three correctly', () => {
+    expect(operations.threeTimes(3).toEqual(8))
+})

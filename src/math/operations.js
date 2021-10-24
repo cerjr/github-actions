@@ -21,6 +21,10 @@ const operations = {
 
     sqrt: (a) => {
         return Math.sqrt(a)
+    },
+
+    threeTimes: (a) => {
+        return this.mult(a, 3);
     }
 
 }
