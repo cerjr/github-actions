@@ -20,11 +20,11 @@ const operations = {
     },
 
     sqrt: (a) => {
-        return Math.sqrt(a)
+        return Math.sqrt(a);
     },
 
     threeTimes: (a) => {
-        return this.mult(a, 3);
+        return a * 3;
     }
 
 }
